@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>كريستال | إكسسوارات وعطور فاخرة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+<base target="_blank">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fas fa-gem"></i></div>
+                <div class="logo-text">كري<span>ستال</span></div>
+            </a>
+
+            <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="القائمة">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home" onclick="closeMenu()">الرئيسية</a></li>
+                    <li><a href="#products" onclick="closeMenu()">المنتجات</a></li>
+                    <li><a href="#about" onclick="closeMenu()">من نحن</a></li>
+                    <li><a href="#delivery" onclick="closeMenu()">التوصيل</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">تواصل معنا</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="cart-btn" onclick="toggleCart()" aria-label="السلة">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <a href="https://wa.me/218917021437" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span class="whatsapp-text">واتساب</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>أناقة لا تُضاهى<br><span>إكسسوارات وعطور</span><br>للذوق الرفيع</h1>
+                <p>اكتشف تشكيلتنا الفاخرة من الإكسسوارات والعطور الفريدة. جودة عالية، أسعار منافسة، وتوصيل مجاني داخل طرابلس.</p>
+                <div class="hero-badges">
+                    <span class="badge"><i class="fas fa-truck"></i> توصيل مجاني</span>
+                    <span class="badge"><i class="fas fa-shield-alt"></i> ضمان الجودة</span>
+                    <span class="badge"><i class="fas fa-money-bill-wave"></i> الدفع عند الاستلام</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn-primary">
+                        <i class="fas fa-shopping-bag"></i>
+                        تسوق الآن
+                    </a>
+                    <a href="https://wa.me/218917021437" class="btn-secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        تواصل عبر واتساب
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=700&fit=crop" alt="عطور وإكسسوارات فاخرة">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Bar -->
+    <div class="features-bar">
+        <div class="features-container">
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
+                <div class="feature-text">
+                    <h4>توصيل سريع</h4>
+                    <p>توصيل مجاني داخل طرابلس</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                <div class="feature-text">
+                    <h4>الدفع عند الاستلام</h4>
+                    <p>ادفع عند استلام طلبك بأمان</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-undo"></i></div>
+                <div class="feature-text">
+                    <h4>استبدال سهل</h4>
+                    <p>سياسة استبدال خلال 7 أيام</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                <div class="feature-text">
+                    <h4>دعم 24/7</h4>
+                    <p>خدمة عملاء على مدار الساعة</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="section-header">
+            <h2>تصنيفات المتجر</h2>
+            <p>اختر من تشكيلتنا المتنوعة من الإكسسوارات والعطور الفاخرة</p>
+            <div class="line"></div>
+        </div>
+        <div class="categories-grid">
+            <div class="category-card" onclick="filterProducts('accessories')">
+                <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&h=400&fit=crop" alt="إكسسوارات">
+                <div class="category-overlay">
+                    <div class="arrow"><i class="fas fa-arrow-left"></i></div>
+                    <h3>إكسسوارات</h3>
+                    <p>10 منتجات فاخرة</p>
+                </div>
+            </div>
+            <div class="category-card" onclick="filterProducts('perfumes')">
+                <img src="https://images.unsplash.com/photo-1541643600914-78a084bc84e9?w=600&h=400&fit=crop" alt="عطور">
+                <div class="category-overlay">
+                    <div class="arrow"><i class="fas fa-arrow-left"></i></div>
+                    <h3>عطور</h3>
+                    <p>10 عطور مميزة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="products-container">
+            <div class="section-header">
+                <h2>منتجاتنا المميزة</h2>
+                <p>20 منتج carefully selected بأعلى معايير الجودة</p>
+                <div class="line"></div>
+            </div>
+            <div class="products-filter">
+                <button class="filter-btn active" onclick="filterProducts('all')">الكل</button>
+                <button class="filter-btn" onclick="filterProducts('accessories')">إكسسوارات</button>
+                <button class="filter-btn" onclick="filterProducts('perfumes')">عطور</button>
+            </div>
+            <div class="products-grid" id="productsGrid"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=500&fit=crop" alt="متجر كريستال">
+            </div>
+            <div class="about-content">
+                <h2>متجر كريستال<br>للإكسسوارات والعطور</h2>
+                <p>نحن متجر متخصص في تقديم أرقى الإكسسوارات والعطور الفاخرة في طرابلس، ليبيا. نؤمن بأن الأناقة تبدأ من التفاصيل الصغيرة، لذلك نختار منتجاتنا بعناية فائقة لتلبي أذواق عملائنا المميزين.</p>
+                <p>جميع منتجاتنا أصلية 100%، ونقدم ضمان الجودة على كل قطعة. مع خدمة التوصيل المجاني داخل طرابلس والدفع عند الاستلام، نضمن لك تجربة تسوق مريحة وآمنة.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">منتج مميز</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">عميل سعيد</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">جودة مضمونة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery -->
+    <section class="delivery" id="delivery">
+        <div class="delivery-container">
+            <h2>خدمة التوصيل</h2>
+            <p>نوفر خدمة توصيل سريعة وآمنة لجميع مناطق طرابلس مجاناً. نصلك أينما كنت في المدينة.</p>
+            <div class="delivery-grid">
+                <div class="delivery-card">
+                    <i class="fas fa-motorcycle"></i>
+                    <h3>توصيل سريع</h3>
+                    <p>نوصل طلبك خلال 24-48 ساعة داخل طرابلس. فريق توصيل متخصص لضمان وصول منتجاتك بحالة ممتازة.</p>
+                </div>
+                <div class="delivery-card">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>الدفع عند الاستلام</h3>
+                    <p>ادفع نقداً عند استلام طلبك. لا حاجة لبطاقات ائتمان أو تحويلات بنكية مسبقة.</p>
+                </div>
+                <div class="delivery-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>تغطية شاملة</h3>
+                    <p>نغطي جميع أحياء طرابلس: وسط المدينة، سوق الجمعة، عين زارة، تاجوراء، وكل المناطق.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h2>آراء عملائنا</h2>
+            <p>نفتخر بثقة عملائنا ونسعى دائماً لتقديم الأفضل</p>
+            <div class="line"></div>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"أفضل متجر إكسسوارات في طرابلس! جودة المنتجات رائعة والتوصيل كان سريع جداً. أنصح الجميع بالتسوق من كريستال."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">س</div>
+                    <div class="author-info">
+                        <h4>سارة العبيدي</h4>
+                        <p>طرابلس - وسط المدينة</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"العطور عندهم أصلية 100% وثابتة. سعرها منافس جداً مقارنة بالمحلات. خدمة العملاء ممتازة والتوصيل مجاني."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">م</div>
+                    <div class="author-info">
+                        <h4>محمد الترهوني</h4>
+                        <p>طرابلس - عين زارة</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="testimonial-text">"اشتريت إكسسوارات لمناسبة خاصة وكانت جودتها فوق الممتاز. التغليف أنيق والمنتج وصل بحالة ممتازة. شكراً كريستال!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">ن</div>
+                    <div class="author-info">
+                        <h4>نورهان الفيتوري</h4>
+                        <p>طرابلس - تاجوراء</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>كري<span>ستال</span></h3>
+                <p>وجهتك الأولى للإكسسوارات والعطور الفاخرة في طرابلس. نقدم منتجات أصلية بجودة عالية مع توصيل مجاني ودفع عند الاستلام.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="تيك توك"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/218917021437" class="social-link" target="_blank" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#products">المنتجات</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#delivery">التوصيل</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>التصنيفات</h4>
+                <ul>
+                    <li><a href="#" onclick="filterProducts('accessories')">إكسسوارات</a></li>
+                    <li><a href="#" onclick="filterProducts('perfumes')">عطور رجالية</a></li>
+                    <li><a href="#" onclick="filterProducts('perfumes')">عطور نسائية</a></li>
+                    <li><a href="#" onclick="filterProducts('accessories')">إكسسوارات خاصة</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>تواصل معنا</h4>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>طرابلس، ليبيا</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span dir="ltr">+218 91 702 1437</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@crystal-ly.com</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>السبت - الخميس: 9 ص - 10 م</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 متجر كريستال. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-bag"></i> سلة المشتريات</h3>
+            <button class="close-cart" onclick="toggleCart()" aria-label="إغلاق"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty">
+                <i class="fas fa-shopping-bag"></i>
+                <p>السلة فارغة</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>المجموع:</span>
+                <span id="cartTotal">0 د.ل</span>
+            </div>
+            <button class="checkout-btn" onclick="checkoutWhatsApp()">
+                <i class="fab fa-whatsapp"></i>
+                إتمام الطلب عبر واتساب
+            </button>
+            <button class="clear-cart" onclick="clearCart()">إفراغ السلة</button>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/218917021437" class="whatsapp-float" target="_blank" aria-label="تواصل عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i>
+        <span id="notificationText">تمت الإضافة إلى السلة</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
