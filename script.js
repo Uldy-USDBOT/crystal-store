@@ -305,7 +305,7 @@ function checkoutWhatsApp() {
     message += `\n*المجموع: ${total} د.ل*\n`;
     message += `\n*طريقة الدفع:* الدفع عند الاستلام\n`;
     message += `*الموقع:* طرابلس، ليبيا\n`;
-    message += `\n*ملاحظة:* يرجى إرسال العنوان التفصيلي واسم العميل\n`;
+    message += `\n*ملاحظة:* يرجى إرسال العنوان التفصيلي ورقم العميل\n`;
 
     const phone = '218917021437';
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
