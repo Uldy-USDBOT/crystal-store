@@ -12,7 +12,7 @@ const products = [
         category: "accessories", 
         price: 65, 
         oldPrice: 85, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-watch-001.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-watch-001.jpg", 
         badge: "bestseller",
         description: "ساعة نسائية سويسرية ذات مظهر راقٍ وأنيق. يتوفر منها 3 ألوان: ذهبي، فضي، ووردي."
     },
@@ -22,7 +22,7 @@ const products = [
         category: "accessories", 
         price: 45, 
         oldPrice: 60, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-necklace-002.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-necklace-002.jpg", 
         badge: "new",
         description: "عقد فاخر مطلي بالذهب عيار 18 مع حجر كريستال طبيعي."
     },
@@ -32,7 +32,7 @@ const products = [
         category: "accessories", 
         price: 35, 
         oldPrice: 45, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-bracelet-003.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-bracelet-003.jpg", 
         badge: "",
         description: "سوار فضي استرليني 925 مطعم بالأحجار الكريمة."
     },
@@ -42,7 +42,7 @@ const products = [
         category: "accessories", 
         price: 55, 
         oldPrice: 70, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-ring-004.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-ring-004.jpg", 
         badge: "",
         description: "خاتم فاخر بفص زمرد طبيعي محاط بالألماس الصناعي."
     },
@@ -52,7 +52,7 @@ const products = [
         category: "accessories", 
         price: 120, 
         oldPrice: 150, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-set-005.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-set-005.jpg", 
         badge: "bestseller",
         description: "طقم كامل يتضمن عقد، سوار، أقراط، وخاتم."
     },
@@ -62,7 +62,7 @@ const products = [
         category: "accessories", 
         price: 25, 
         oldPrice: 35, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-earrings-006.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-earrings-006.jpg", 
         badge: "new",
         description: "أقراط ناعمة من كريستال سواروفسكي الأصلي."
     },
@@ -72,7 +72,7 @@ const products = [
         category: "accessories", 
         price: 85, 
         oldPrice: 110, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-pendant-007.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-pendant-007.jpg", 
         badge: "",
         description: "قلادة ذهبية عيار 18 بتصميم كلاسيكي فاخر."
     },
@@ -82,7 +82,7 @@ const products = [
         category: "accessories", 
         price: 15, 
         oldPrice: 22, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-hair-008.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-hair-008.jpg", 
         badge: "",
         description: "مجموعة إكسسوارات شعر كريستالية للمناسبات الخاصة."
     },
@@ -92,7 +92,7 @@ const products = [
         category: "accessories", 
         price: 50, 
         oldPrice: 70, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-sunglasses-009.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-sunglasses-009.jpg", 
         badge: "new",
         description: "نظارة شمسية بإطار معدني فاخر وحماية UV400."
     },
@@ -102,7 +102,7 @@ const products = [
         category: "accessories", 
         price: 40, 
         oldPrice: 55, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-wallet-010.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-wallet-010.jpg", 
         badge: "",
         description: "محفظة يدوية من الجلد الطبيعي الإيطالي الفاخر."
     },
@@ -116,7 +116,7 @@ const products = [
         category: "perfumes", 
         price: 55, 
         oldPrice: 75, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-gold-011.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-perfume-gold-011.jpg", 
         badge: "bestseller",
         description: "عطر فاخر بمزيج من العود والمسك والعنبر."
     },
@@ -126,7 +126,7 @@ const products = [
         category: "perfumes", 
         price: 42, 
         oldPrice: 55, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-musk-012.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-perfume-musk-012.jpg", 
         badge: "",
         description: "عطر ناعم بعبق المسك الأبيض النقي والياسمين."
     },
@@ -136,7 +136,7 @@ const products = [
         category: "perfumes", 
         price: 75, 
         oldPrice: 95, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-oud-013.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-perfume-oud-013.jpg", 
         badge: "new",
         description: "عطر شرقي فاخر بخلاصة العود الكمبودي النادر."
     },
@@ -146,7 +146,7 @@ const products = [
         category: "perfumes", 
         price: 48, 
         oldPrice: 65, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-rose-014.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-perfume-rose-014.jpg", 
         badge: "",
         description: "عطر زهري بعبق الورد الطائفي الأصيل والمسك."
     },
@@ -156,7 +156,7 @@ const products = [
         category: "perfumes", 
         price: 60, 
         oldPrice: 80, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-layla-015.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-perfume-layla-015.jpg", 
         badge: "bestseller",
         description: "عطر عربي أصيل بمزيج من العود والتوت البري والفانيليا."
     },
@@ -166,7 +166,7 @@ const products = [
         category: "perfumes", 
         price: 38, 
         oldPrice: 50, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-ocean-016.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-perfume-ocean-016.jpg", 
         badge: "new",
         description: "عطر بحري منعش بعبق الليمون والأخشاب البحرية."
     },
@@ -176,7 +176,7 @@ const products = [
         category: "perfumes", 
         price: 50, 
         oldPrice: 68, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-black-017.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-perfume-black-017.jpg", 
         badge: "",
         description: "عطر جريء بمزيج المسك الأسود والتوابل الشرقية."
     },
@@ -186,7 +186,7 @@ const products = [
         category: "perfumes", 
         price: 45, 
         oldPrice: 58, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-jasmine-018.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-perfume-jasmine-018.jpg", 
         badge: "",
         description: "عطر زهري نبيل بعبق الياسمين الهندي والبرغموت."
     },
@@ -196,7 +196,7 @@ const products = [
         category: "perfumes", 
         price: 35, 
         oldPrice: 48, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-vanilla-019.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-perfume-vanilla-019.jpg", 
         badge: "new",
         description: "عطر دافئ وحلو بمزيج الفانيليا المدغشقرية والكراميل."
     },
@@ -206,7 +206,7 @@ const products = [
         category: "perfumes", 
         price: 68, 
         oldPrice: 88, 
-        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-desert-020.jpg", 
+        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-perfume-desert-020.jpg", 
         badge: "",
         description: "عطر صحراوي فاخر بخلاصة العود والصندل والتوابل."
     }
