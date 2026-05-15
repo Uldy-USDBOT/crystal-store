@@ -1,25 +1,215 @@
-// Products Data
+// Products Data - متجر كريستال
+// تاريخ التحديث: 2026-05-15
+// رقم الهاتف: +218 91 702 1437
+
 const products = [
-    { id: 1, name: "ساعة كريستال فاخرة", category: "accessories", price: 450, oldPrice: 550, image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=400&h=400&fit=crop", badge: "bestseller" },
-    { id: 2, name: "عقد ذهبي مع كريستال", category: "accessories", price: 280, oldPrice: 350, image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop", badge: "new" },
-    { id: 3, name: "سوار فضي مطعم", category: "accessories", price: 180, oldPrice: 220, image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop", badge: "" },
-    { id: 4, name: "خاتم زمرد فاخر", category: "accessories", price: 320, oldPrice: 400, image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=400&fit=crop", badge: "" },
-    { id: 5, name: "طقم إكسسوارات كامل", category: "accessories", price: 650, oldPrice: 800, image: "https://images.unsplash.com/photo-1573408301180-04b4c9b8f57e?w=400&h=400&fit=crop", badge: "bestseller" },
-    { id: 6, name: "أقراط كريستال ناعمة", category: "accessories", price: 150, oldPrice: 190, image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&h=400&fit=crop", badge: "new" },
-    { id: 7, name: "قلادة ذهبية عيار 18", category: "accessories", price: 520, oldPrice: 650, image: "https://images.unsplash.com/photo-1515562141124-5e09a8f9b149?w=400&h=400&fit=crop", badge: "" },
-    { id: 8, name: "إكسسوارات شعر فاخرة", category: "accessories", price: 95, oldPrice: 120, image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=400&fit=crop", badge: "" },
-    { id: 9, name: "نظارة شمسية ماركة", category: "accessories", price: 380, oldPrice: 480, image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop", badge: "new" },
-    { id: 10, name: "محفظة جلد طبيعي", category: "accessories", price: 220, oldPrice: 280, image: "https://images.unsplash.com/photo-1627123424574-724758594e93?w=400&h=400&fit=crop", badge: "" },
-    { id: 11, name: "عطر كريستال الذهبي", category: "perfumes", price: 380, oldPrice: 480, image: "https://images.unsplash.com/photo-1541643600914-78a084bc84e9?w=400&h=400&fit=crop", badge: "bestseller" },
-    { id: 12, name: "عطر المسك الأبيض", category: "perfumes", price: 290, oldPrice: 360, image: "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=400&h=400&fit=crop", badge: "" },
-    { id: 13, name: "عطر العود الفاخر", category: "perfumes", price: 550, oldPrice: 700, image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=400&h=400&fit=crop", badge: "new" },
-    { id: 14, name: "عطر الورد الطائفي", category: "perfumes", price: 320, oldPrice: 400, image: "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&h=400&fit=crop", badge: "" },
-    { id: 15, name: "عطر ليلى العربية", category: "perfumes", price: 420, oldPrice: 520, image: "https://images.unsplash.com/photo-1563170351-be82bc888aa4?w=400&h=400&fit=crop", badge: "bestseller" },
-    { id: 16, name: "عطر البحر الأبيض", category: "perfumes", price: 260, oldPrice: 330, image: "https://images.unsplash.com/photo-1519669011783-4eaa95fa1b7d?w=400&h=400&fit=crop", badge: "new" },
-    { id: 17, name: "عطر المسك الأسود", category: "perfumes", price: 340, oldPrice: 430, image: "https://images.unsplash.com/photo-1557170334-a9632e77a71e?w=400&h=400&fit=crop", badge: "" },
-    { id: 18, name: "عطر الياسمين النبيل", category: "perfumes", price: 300, oldPrice: 380, image: "https://images.unsplash.com/photo-1592914610354-fd354ea45e48?w=400&h=400&fit=crop", badge: "" },
-    { id: 19, name: "عطر الفانيليا الدافئ", category: "perfumes", price: 240, oldPrice: 300, image: "https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400&h=400&fit=crop", badge: "new" },
-    { id: 20, name: "عطر الصحراء الذهبية", category: "perfumes", price: 480, oldPrice: 600, image: "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=400&h=400&fit=crop", badge: "" }
+    // ==========================================
+    // إكسسوارات (10 منتجات)
+    // ==========================================
+    { 
+        id: 1, 
+        name: "ساعة سويسرية كريستال", 
+        category: "accessories", 
+        price: 65, 
+        oldPrice: 85, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-watch-001.jpg", 
+        badge: "bestseller",
+        description: "ساعة نسائية سويسرية ذات مظهر راقٍ وأنيق. يتوفر منها 3 ألوان: ذهبي، فضي، ووردي."
+    },
+    { 
+        id: 2, 
+        name: "عقد ذهبي مع كريستال", 
+        category: "accessories", 
+        price: 45, 
+        oldPrice: 60, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-necklace-002.jpg", 
+        badge: "new",
+        description: "عقد فاخر مطلي بالذهب عيار 18 مع حجر كريستال طبيعي."
+    },
+    { 
+        id: 3, 
+        name: "سوار فضي مطعم", 
+        category: "accessories", 
+        price: 35, 
+        oldPrice: 45, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-bracelet-003.jpg", 
+        badge: "",
+        description: "سوار فضي استرليني 925 مطعم بالأحجار الكريمة."
+    },
+    { 
+        id: 4, 
+        name: "خاتم زمرد فاخر", 
+        category: "accessories", 
+        price: 55, 
+        oldPrice: 70, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-ring-004.jpg", 
+        badge: "",
+        description: "خاتم فاخر بفص زمرد طبيعي محاط بالألماس الصناعي."
+    },
+    { 
+        id: 5, 
+        name: "طقم إكسسوارات كامل", 
+        category: "accessories", 
+        price: 120, 
+        oldPrice: 150, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-set-005.jpg", 
+        badge: "bestseller",
+        description: "طقم كامل يتضمن عقد، سوار، أقراط، وخاتم."
+    },
+    { 
+        id: 6, 
+        name: "أقراط كريستال ناعمة", 
+        category: "accessories", 
+        price: 25, 
+        oldPrice: 35, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-earrings-006.jpg", 
+        badge: "new",
+        description: "أقراط ناعمة من كريستال سواروفسكي الأصلي."
+    },
+    { 
+        id: 7, 
+        name: "قلادة ذهبية عيار 18", 
+        category: "accessories", 
+        price: 85, 
+        oldPrice: 110, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-pendant-007.jpg", 
+        badge: "",
+        description: "قلادة ذهبية عيار 18 بتصميم كلاسيكي فاخر."
+    },
+    { 
+        id: 8, 
+        name: "إكسسوارات شعر فاخرة", 
+        category: "accessories", 
+        price: 15, 
+        oldPrice: 22, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-hair-008.jpg", 
+        badge: "",
+        description: "مجموعة إكسسوارات شعر كريستالية للمناسبات الخاصة."
+    },
+    { 
+        id: 9, 
+        name: "نظارة شمسية ماركة", 
+        category: "accessories", 
+        price: 50, 
+        oldPrice: 70, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-sunglasses-009.jpg", 
+        badge: "new",
+        description: "نظارة شمسية بإطار معدني فاخر وحماية UV400."
+    },
+    { 
+        id: 10, 
+        name: "محفظة جلد طبيعي", 
+        category: "accessories", 
+        price: 40, 
+        oldPrice: 55, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-wallet-010.jpg", 
+        badge: "",
+        description: "محفظة يدوية من الجلد الطبيعي الإيطالي الفاخر."
+    },
+
+    // ==========================================
+    // عطور (10 منتجات)
+    // ==========================================
+    { 
+        id: 11, 
+        name: "عطر كريستال الذهبي", 
+        category: "perfumes", 
+        price: 55, 
+        oldPrice: 75, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-gold-011.jpg", 
+        badge: "bestseller",
+        description: "عطر فاخر بمزيج من العود والمسك والعنبر."
+    },
+    { 
+        id: 12, 
+        name: "عطر المسك الأبيض", 
+        category: "perfumes", 
+        price: 42, 
+        oldPrice: 55, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-musk-012.jpg", 
+        badge: "",
+        description: "عطر ناعم بعبق المسك الأبيض النقي والياسمين."
+    },
+    { 
+        id: 13, 
+        name: "عطر العود الفاخر", 
+        category: "perfumes", 
+        price: 75, 
+        oldPrice: 95, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-oud-013.jpg", 
+        badge: "new",
+        description: "عطر شرقي فاخر بخلاصة العود الكمبودي النادر."
+    },
+    { 
+        id: 14, 
+        name: "عطر الورد الطائفي", 
+        category: "perfumes", 
+        price: 48, 
+        oldPrice: 65, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-rose-014.jpg", 
+        badge: "",
+        description: "عطر زهري بعبق الورد الطائفي الأصيل والمسك."
+    },
+    { 
+        id: 15, 
+        name: "عطر ليلى العربية", 
+        category: "perfumes", 
+        price: 60, 
+        oldPrice: 80, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-layla-015.jpg", 
+        badge: "bestseller",
+        description: "عطر عربي أصيل بمزيج من العود والتوت البري والفانيليا."
+    },
+    { 
+        id: 16, 
+        name: "عطر البحر الأبيض", 
+        category: "perfumes", 
+        price: 38, 
+        oldPrice: 50, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-ocean-016.jpg", 
+        badge: "new",
+        description: "عطر بحري منعش بعبق الليمون والأخشاب البحرية."
+    },
+    { 
+        id: 17, 
+        name: "عطر المسك الأسود", 
+        category: "perfumes", 
+        price: 50, 
+        oldPrice: 68, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-black-017.jpg", 
+        badge: "",
+        description: "عطر جريء بمزيج المسك الأسود والتوابل الشرقية."
+    },
+    { 
+        id: 18, 
+        name: "عطر الياسمين النبيل", 
+        category: "perfumes", 
+        price: 45, 
+        oldPrice: 58, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-jasmine-018.jpg", 
+        badge: "",
+        description: "عطر زهري نبيل بعبق الياسمين الهندي والبرغموت."
+    },
+    { 
+        id: 19, 
+        name: "عطر الفانيليا الدافئ", 
+        category: "perfumes", 
+        price: 35, 
+        oldPrice: 48, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-vanilla-019.jpg", 
+        badge: "new",
+        description: "عطر دافئ وحلو بمزيج الفانيليا المدغشقرية والكراميل."
+    },
+    { 
+        id: 20, 
+        name: "عطر الصحراء الذهبية", 
+        category: "perfumes", 
+        price: 68, 
+        oldPrice: 88, 
+        image: "https://raw.githubusercontent.com/USERNAME/crystal-store/main/images/crystal-perfume-desert-020.jpg", 
+        badge: "",
+        description: "عطر صحراوي فاخر بخلاصة العود والصندل والتوابل."
+    }
 ];
 
 let cart = [];
@@ -75,7 +265,6 @@ function initHeaderScroll() {
             header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
         }
 
-        // Hide/show header on scroll (mobile)
         if (window.innerWidth <= 768) {
             if (currentScroll > lastScroll && currentScroll > 100) {
                 header.style.transform = 'translateY(-100%)';
@@ -110,6 +299,7 @@ function renderProducts(filter) {
             <div class="product-info">
                 <div class="product-category">${product.category === 'accessories' ? 'إكسسوارات' : 'عطور'}</div>
                 <h3 class="product-name">${product.name}</h3>
+                <p class="product-desc">${product.description}</p>
                 <div class="product-price">
                     <span class="current-price">${product.price} د.ل</span>
                     ${product.oldPrice ? `<span class="old-price">${product.oldPrice} د.ل</span>` : ''}
@@ -122,7 +312,6 @@ function renderProducts(filter) {
         </div>
     `).join('');
 
-    // Re-observe new elements
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -138,7 +327,6 @@ function renderProducts(filter) {
 function filterProducts(category) {
     currentFilter = category;
 
-    // Update active button
     document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.classList.remove('active');
         if (btn.textContent.includes('الكل') && category === 'all') btn.classList.add('active');
@@ -148,7 +336,6 @@ function filterProducts(category) {
 
     renderProducts(category);
 
-    // Scroll to products
     const productsSection = document.getElementById('products');
     const headerHeight = document.querySelector('header').offsetHeight;
     const targetPosition = productsSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
@@ -169,7 +356,6 @@ function addToCart(productId) {
     updateCartUI();
     showNotification(`تم إضافة "${product.name}" إلى السلة`);
 
-    // Haptic feedback on mobile
     if (navigator.vibrate) {
         navigator.vibrate(50);
     }
@@ -305,7 +491,7 @@ function checkoutWhatsApp() {
     message += `\n*المجموع: ${total} د.ل*\n`;
     message += `\n*طريقة الدفع:* الدفع عند الاستلام\n`;
     message += `*الموقع:* طرابلس، ليبيا\n`;
-    message += `\n*ملاحظة:* يرجى إرسال العنوان التفصيلي ورقم العميل\n`;
+    message += `\n*ملاحظة:* يرجى إرسال العنوان التفصيلي واسم العميل\n`;
 
     const phone = '218917021437';
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
@@ -326,7 +512,6 @@ function showNotification(text) {
     notificationText.textContent = text;
     notification.classList.add('show');
 
-    // Clear existing timeout
     if (notification.timeoutId) {
         clearTimeout(notification.timeoutId);
     }
