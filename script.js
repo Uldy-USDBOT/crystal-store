@@ -11,7 +11,7 @@ const products = [
         name: "ساعة سويسرية كريستال", 
         category: "accessories", 
         price: 165, 
-        oldPrice: 85, 
+        oldPrice: 185, 
         image: "images/crystal1.jpg", 
         badge: "bestseller",
         description: "ساعة نسائية سويسرية ذات مظهر راقٍ وأنيق. يتوفر منها 3 ألوان: ذهبي، فضي، ووردي."
@@ -20,8 +20,8 @@ const products = [
         id: 2, 
         name: "عقد ذهبي مع كريستال", 
         category: "accessories", 
-        price: 45, 
-        oldPrice: 60, 
+        price: 145, 
+        oldPrice: 160, 
         image: "images/crystal-necklace-002.jpg", 
         badge: "new",
         description: "عقد فاخر مطلي بالذهب عيار 18 مع حجر كريستال طبيعي."
