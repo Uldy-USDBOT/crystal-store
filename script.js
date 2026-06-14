@@ -470,6 +470,11 @@ document.addEventListener('keydown', (e) => {
             toggleCart();
         }
         closeMenu();
+        // Also close quick view modal if open
+        const quickOverlay = document.getElementById('quickViewOverlay');
+        if (quickOverlay && quickOverlay.classList.contains('active')) {
+            closeQuickView();
+        }
     }
 });
 
@@ -498,10 +503,77 @@ function checkoutWhatsApp() {
     window.open(url, '_blank');
 }
 
-// Quick View
+// ========== QUICK VIEW (Modified) ==========
 function quickView(productId) {
     const product = products.find(p => p.id === productId);
-    showNotification(`${product.name} - ${product.price} د.ل`);
+    if (!product) return;
+
+    // Remove any existing overlay
+    const existingOverlay = document.getElementById('quickViewOverlay');
+    if (existingOverlay) {
+        existingOverlay.remove();
+    }
+
+    // Create overlay
+    const overlay = document.createElement('div');
+    overlay.id = 'quickViewOverlay';
+    overlay.className = 'quick-view-overlay';
+    overlay.innerHTML = `
+        <div class="quick-view-modal">
+            <button class="quick-view-close" onclick="closeQuickView()">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="${product.image}" alt="${product.name}" class="quick-view-image" onerror="this.src='https://via.placeholder.com/600x600/d4a373/ffffff?text=${encodeURIComponent(product.name)}'">
+            <div class="quick-view-details">
+                <div class="quick-view-category">${product.category === 'accessories' ? 'إكسسوارات' : 'عطور'}</div>
+                <h2 class="quick-view-name">${product.name}</h2>
+                <p class="quick-view-desc">${product.description}</p>
+                <div class="quick-view-price">
+                    <span>${product.price} د.ل</span>
+                    ${product.oldPrice ? `<span class="quick-view-old-price">${product.oldPrice} د.ل</span>` : ''}
+                </div>
+                <button class="quick-view-add" onclick="addToCartFromQuickView(${product.id})">
+                    <i class="fas fa-shopping-bag"></i> أضف إلى السلة
+                </button>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+
+    // Activate with slight delay for transition
+    setTimeout(() => {
+        overlay.classList.add('active');
+    }, 10);
+
+    // Close when clicking on overlay background (not the modal itself)
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            closeQuickView();
+        }
+    });
+}
+
+function addToCartFromQuickView(productId) {
+    addToCart(productId);
+    closeQuickView();
+    // Open cart sidebar after adding
+    toggleCart();
+}
+
+function closeQuickView() {
+    const overlay = document.getElementById('quickViewOverlay');
+    if (overlay) {
+        overlay.classList.remove('active');
+        // Remove after transition (0.3s)
+        setTimeout(() => {
+            if (overlay.parentNode) {
+                overlay.remove();
+                document.body.style.overflow = '';
+            }
+        }, 300);
+    }
 }
 
 // Show Notification
@@ -526,9 +598,9 @@ document.addEventListener('click', (e) => {
     const nav = document.getElementById('mainNav');
     const menuBtn = document.querySelector('.mobile-menu-btn');
 
-    if (nav.classList.contains('active') && 
+    if (nav && nav.classList.contains('active') && 
         !nav.contains(e.target) && 
-        !menuBtn.contains(e.target)) {
+        menuBtn && !menuBtn.contains(e.target)) {
         closeMenu();
     }
 });
