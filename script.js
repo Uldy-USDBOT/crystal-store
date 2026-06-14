@@ -12,7 +12,7 @@ const products = [
         category: "accessories", 
         price: 65, 
         oldPrice: 85, 
-        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-watch-001.jpg", 
+        image: "images/crystal1.jpg", 
         badge: "bestseller",
         description: "ساعة نسائية سويسرية ذات مظهر راقٍ وأنيق. يتوفر منها 3 ألوان: ذهبي، فضي، ووردي."
     },
