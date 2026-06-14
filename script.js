@@ -10,7 +10,7 @@ const products = [
         id: 1, 
         name: "ساعة سويسرية كريستال", 
         category: "accessories", 
-        price: 65, 
+        price: 165, 
         oldPrice: 85, 
         image: "images/crystal1.jpg", 
         badge: "bestseller",
@@ -22,7 +22,7 @@ const products = [
         category: "accessories", 
         price: 45, 
         oldPrice: 60, 
-        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-necklace-002.jpg", 
+        image: "main/images/crystal-necklace-002.jpg", 
         badge: "new",
         description: "عقد فاخر مطلي بالذهب عيار 18 مع حجر كريستال طبيعي."
     },
