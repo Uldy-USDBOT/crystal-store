@@ -22,7 +22,7 @@ const products = [
         category: "accessories", 
         price: 45, 
         oldPrice: 60, 
-        image: "main/images/crystal-necklace-002.jpg", 
+        image: "images/crystal-necklace-002.jpg", 
         badge: "new",
         description: "عقد فاخر مطلي بالذهب عيار 18 مع حجر كريستال طبيعي."
     },
