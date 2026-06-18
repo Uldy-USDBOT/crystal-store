@@ -28,10 +28,10 @@ const products = [
     },
     { 
         id: 3, 
-        name: "سوار مطعم", 
+        name: "سوار مع خاتم مطعم", 
         category: "accessories", 
-        price: 35, 
-        oldPrice: 45, 
+        price: 65, 
+        oldPrice: 75, 
         image: "images/bracelet-003.jpg", 
         badge: "",
         description: "سوار بلاكيور استرليني 925 مطعم ."
