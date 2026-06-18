@@ -52,7 +52,7 @@ const products = [
         category: "accessories", 
         price: 120, 
         oldPrice: 150, 
-        image: "images/set-005.jpg", 
+        image: "images/set-05.jpg", 
         badge: "bestseller",
         description: "طقم كامل يتضمن عقد، ساعة، أقراط، وخاتم."
     },
