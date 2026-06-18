@@ -28,13 +28,13 @@ const products = [
     },
     { 
         id: 3, 
-        name: "سوار فضي مطعم", 
+        name: "سوار مطعم", 
         category: "accessories", 
         price: 35, 
         oldPrice: 45, 
-        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-bracelet-003.jpg", 
+        image: "images/bracelet-003.jpg", 
         badge: "",
-        description: "سوار فضي استرليني 925 مطعم بالأحجار الكريمة."
+        description: "سوار بلاكيور استرليني 925 مطعم ."
     },
     { 
         id: 4, 
