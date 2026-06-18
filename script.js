@@ -52,9 +52,9 @@ const products = [
         category: "accessories", 
         price: 120, 
         oldPrice: 150, 
-        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-set-005.jpg", 
+        image: "images/set-005.jpg", 
         badge: "bestseller",
-        description: "طقم كامل يتضمن عقد، سوار، أقراط، وخاتم."
+        description: "طقم كامل يتضمن عقد، ساعة، أقراط، وخاتم."
     },
     { 
         id: 6, 
