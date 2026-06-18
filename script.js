@@ -42,7 +42,7 @@ const products = [
         category: "accessories", 
         price: 55, 
         oldPrice: 70, 
-        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-ring-004.jpg", 
+        image: "images/crystal-ring-004.jpg", 
         badge: "",
         description: "خاتم فاخر بفص زمرد طبيعي محاط بالألماس الصناعي."
     },
