@@ -146,7 +146,7 @@ const products = [
         category: "perfumes", 
         price: 48, 
         oldPrice: 65, 
-        image: "https://raw.githubusercontent.com/Uldy-U/crystal-store/main/images/crystal-perfume-rose-014.jpg", 
+        image: "images/FB_IMG_1789449437130.jpg", 
         badge: "",
         description: "عطر زهري بعبق الورد الطائفي الأصيل والمسك."
     },
