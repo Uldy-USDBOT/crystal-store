@@ -1,6 +1,6 @@
 # كريستال - متجر إكسسوارات وعطور فاخرة
 
-[![Website](https://img.shields.io/badge/Website-كريستال-d4a373?style=for-the-badge)](https://yourusername.github.io/crystal-store)
+[![Website](https://img.shields.io/badge/Website-كريستال-d4a373?style=for-the-badge)](https://wepoor.live)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-تواصل%20معنا-25D366?style=for-the-badge&logo=whatsapp)](https://wa.me/218917021437)
 
 ## 🏪 نبذة عن المتجر
@@ -22,11 +22,21 @@
 
 ```
 crystal-store/
-├── index.html      # الصفحة الرئيسية
-├── style.css       # ملف التنسيقات
-├── script.js       # ملف الجافاسكريبت
-└── README.md       # هذا الملف
+├── index.html         # الصفحة الرئيسية (20 منتجاً مميزاً + السلة)
+├── products.html      # صفحة المزيد من المنتجات (20 منتجاً + نفس السلة)
+├── products-data.js   # بيانات كل المنتجات (مصدر واحد للصفحتين)
+├── script.js          # منطق المتجر والسلة والطلب عبر واتساب
+├── style.css          # ملف التنسيقات
+├── images/            # صور المنتجات
+└── README.md          # هذا الملف
 ```
+
+## 🛒 كيف ترتبط المنتجات بالسلة؟
+
+- كل منتج له **رقم (id) فريد** في `products-data.js` (1-20 للرئيسية، 21-40 للمزيد).
+- السلة تحفظ فقط `{ id, qty }` في المتصفح، وتُقرأ الأسعار والأسماء والصور من `products-data.js`،
+  لذلك تظهر نفس السلة في الصفحتين وتتحدث الأسعار تلقائياً عند تعديلها.
+- لإضافة منتج جديد: أضفه في `products-data.js` برقم جديد، وضع صورته في `images/` بنفس المسار المكتوب.
 
 ## 🚀 طريقة النشر على GitHub Pages
 
