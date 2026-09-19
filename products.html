@@ -9,28 +9,75 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .more-products-page { padding-top: 120px; min-height: 100vh; }
-        .more-products-header { max-width: 1400px; margin: 0 auto 35px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+        .more-products-header { max-width: 1400px; margin: 0 auto 35px; padding: 0 20px; }
         .more-products-header h1 { font-size: 32px; color: var(--secondary); margin-bottom: 6px; }
         .more-products-header p { color: var(--gray); }
         .back-home { color: white; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); padding: 11px 20px; border-radius: 25px; text-decoration: none; font-weight: 700; white-space: nowrap; }
         .more-products-grid { max-width: 1400px; margin: 0 auto; padding: 0 20px 70px; }
-        .more-products-grid .product-card { opacity: 1; transform: none; }
         @media (max-width: 600px) { .more-products-header h1 { font-size: 25px; } .more-products-page { padding-top: 95px; } }
+        @media (max-width: 480px) { .back-home { padding: 11px 14px; } .back-home span { display: none; } }
     </style>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <a href="index.html" class="logo" target="_self"><div class="logo-icon"><i class="fas fa-gem"></i></div><div class="logo-text">كري<span>ستال</span></div></a>
-            <a href="index.html" class="back-home" target="_self"><i class="fas fa-arrow-right"></i> العودة للرئيسية</a>
+            <a href="index.html" class="logo"><div class="logo-icon"><i class="fas fa-gem"></i></div><div class="logo-text">كري<span>ستال</span></div></a>
+            <div class="header-actions">
+                <button class="cart-btn" type="button" onclick="toggleCart()" aria-label="السلة">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <a href="index.html" class="back-home"><i class="fas fa-arrow-right"></i> <span>العودة للرئيسية</span></a>
+            </div>
         </div>
     </header>
+
     <main class="more-products-page">
         <div class="more-products-header">
-            <div><h1>المزيد من المنتجات</h1><p>اكتشف 20 منتجاً إضافياً مختاراً بعناية</p></div>
+            <h1>المزيد من المنتجات</h1>
+            <p>اكتشف 20 منتجاً إضافياً مختاراً بعناية</p>
         </div>
         <div class="products-grid more-products-grid" id="moreProductsGrid"></div>
     </main>
-    <script src="products-page.js"></script>
+
+    <!-- Cart Sidebar (نفس سلة الصفحة الرئيسية) -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-bag"></i> سلة المشتريات</h3>
+            <button class="close-cart" type="button" onclick="toggleCart()" aria-label="إغلاق"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty">
+                <i class="fas fa-shopping-bag"></i>
+                <p>السلة فارغة</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>المجموع:</span>
+                <span id="cartTotal">0 د.ل</span>
+            </div>
+            <button class="checkout-btn" type="button" onclick="checkoutWhatsApp()">
+                <i class="fab fa-whatsapp"></i>
+                إتمام الطلب عبر واتساب
+            </button>
+            <button class="clear-cart" type="button" onclick="clearCart()">إفراغ السلة</button>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/218917021437" class="whatsapp-float" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i>
+        <span id="notificationText">تمت الإضافة إلى السلة</span>
+    </div>
+
+    <script src="products-data.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
