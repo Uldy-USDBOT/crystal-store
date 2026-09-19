@@ -1446,3 +1446,15 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+/* ===== زر "مزيد من المنتجات" ===== */
+.more-products-link {
+    display: flex;
+    width: max-content;
+    margin: 30px auto 0;
+}
+
+/* منع تكبير الضغط المزدوج على الأزرار دون تعطيل النقرات */
+button, a, .action-btn, .qty-btn {
+    touch-action: manipulation;
+}
