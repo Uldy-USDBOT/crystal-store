@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المزيد من المنتجات | كريستال</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .more-products-page { padding-top: 120px; min-height: 100vh; }
+        .more-products-header { max-width: 1400px; margin: 0 auto 35px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+        .more-products-header h1 { font-size: 32px; color: var(--secondary); margin-bottom: 6px; }
+        .more-products-header p { color: var(--gray); }
+        .back-home { color: white; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); padding: 11px 20px; border-radius: 25px; text-decoration: none; font-weight: 700; white-space: nowrap; }
+        .more-products-grid { max-width: 1400px; margin: 0 auto; padding: 0 20px 70px; }
+        .more-products-grid .product-card { opacity: 1; transform: none; }
+        @media (max-width: 600px) { .more-products-header h1 { font-size: 25px; } .more-products-page { padding-top: 95px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" target="_self"><div class="logo-icon"><i class="fas fa-gem"></i></div><div class="logo-text">كري<span>ستال</span></div></a>
+            <a href="index.html" class="back-home" target="_self"><i class="fas fa-arrow-right"></i> العودة للرئيسية</a>
+        </div>
+    </header>
+    <main class="more-products-page">
+        <div class="more-products-header">
+            <div><h1>المزيد من المنتجات</h1><p>اكتشف 20 منتجاً إضافياً مختاراً بعناية</p></div>
+        </div>
+        <div class="products-grid more-products-grid" id="moreProductsGrid"></div>
+    </main>
+    <script src="products-page.js"></script>
+</body>
+</html>
