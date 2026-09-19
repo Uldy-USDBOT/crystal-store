@@ -20,7 +20,12 @@ const extraProducts = [
     ['عطر الفانيليا والمسك','perfumes',480,640,'مزيج دافئ من الفانيليا الناعمة والمسك.'],
     ['عطر الورد والمسك','perfumes',580,760,'تركيبة أنثوية ناعمة من الورد والمسك الفاخر.']
 ].map((item, index) => ({
-    id: index + 21, name: item[0], category: item[1], price: item[2], oldPrice: item[3], description: item[4],
+    id: index + 21,
+    name: item[0],
+    category: item[1],
+    price: item[2],
+    oldPrice: item[3],
+    description: item[4],
     badge: index % 4 === 0 ? 'new' : '',
     image: `https://via.placeholder.com/600x600/d4a373/ffffff?text=${encodeURIComponent(item[0])}`
 }));
@@ -30,15 +35,21 @@ const categoryNames = { accessories: 'إكسسوارات', perfumes: 'عطور' 
 const grid = document.getElementById('moreProductsGrid');
 
 function readCart() {
-    try { return JSON.parse(localStorage.getItem(CART_KEY) || '[]'); }
-    catch (error) { return []; }
+    try {
+        return JSON.parse(localStorage.getItem(CART_KEY) || '[]');
+    } catch (error) {
+        return [];
+    }
 }
 
 function addToCart(product) {
     const cart = readCart();
-    const item = cart.find(entry => entry.id === product.id);
-    if (item) item.qty += 1;
-    else cart.push({ ...product, qty: 1 });
+    const item = cart.find(entry => entry.id === product.id && entry.category === product.category);
+    if (item) {
+        item.qty += 1;
+    } else {
+        cart.push({ ...product, qty: 1 });
+    }
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
     window.dispatchEvent(new Event('storage'));
     alert(`تم إضافة "${product.name}" إلى السلة`);
